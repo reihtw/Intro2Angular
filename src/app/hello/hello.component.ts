@@ -10,7 +10,6 @@ export class HelloComponent implements OnInit {
   myname: string = 'Reihtw';
   bitwiseOR: number = 2 | 5;
   i = 0;
-  someVar = Math.random();
 
   constructor() { }
 
@@ -19,9 +18,6 @@ export class HelloComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.someVar = Math.random();
-    }, 50)
   }
 
 }

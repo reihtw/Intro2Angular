@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'intro2angular';
+
+  myVariable: string = '';
+  isDisabled: boolean = false;
+
+  constructor() {
+    setInterval(() => {
+      this.myVariable = Math.random().toString();
+      this.isDisabled = Math.random() > 0.5;
+    }, 500);
+  }
 }
